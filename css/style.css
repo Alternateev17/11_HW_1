@@ -14,6 +14,7 @@
   align-items: center;
   position: relative;
   max-width: 100%;
+  background-size: cover;
   background-image: url(../img/image__1.jpg);
   background-position: center;
 }
@@ -25,7 +26,6 @@
   background: #111a28;
   box-shadow: 0px 0px 65px rgba(0, 0, 0, 0.85);
   border-radius: 10px;
-  
 }
 
 .row-padding {
@@ -92,22 +92,27 @@
   margin-left: 12px;
 }
 
+h2 {
+  font-weight: 200;
+}
 
 .title {
   padding-top: 65px;
   font-family: "Mukta", sans-serif;
   font-style: normal;
-  font-weight: 200;
   font-size: 16px;
   line-height: 34px;
   letter-spacing: 0.08em;
   color: #e1e1e1;
 }
 
+p {
+  font-weight: 200;
+}
+
 .text {
   font-family: "Mukta", sans-serif;
   font-style: normal;
-  font-weight: 200;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.05em;
@@ -127,11 +132,11 @@
   overflow: hidden;
 }
 
-.rating:not(:checked)>input {
+.rating:not(:checked) > input {
   display: none;
 }
 
-.rating:not(:checked)>label {
+.rating:not(:checked) > label {
   float: right;
   width: 42px;
   padding: 0;
@@ -142,30 +147,28 @@
   text-shadow: 1px 1px #bbb;
 }
 
-.rating:not(:checked)>label:before {
-  content: '★';
-  
+.rating:not(:checked) > label:before {
+  content: "★";
 }
 
-.rating>input:checked~label {
-  color: #F7BF16;
-  
+.rating > input:checked ~ label {
+  color: #f7bf16;
 }
 
-.rating:not(:checked)>label:hover,
-.rating:not(:checked)>label:hover~label {
-  color: #F7BF16;
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #f7bf16;
 }
 
-.rating>input:checked+label:hover,
-.rating>input:checked+label:hover~label,
-.rating>input:checked~label:hover,
-.rating>input:checked~label:hover~label,
-.rating>label:hover~input:checked~label {
-  color: #F7BF16;
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #f7bf16;
 }
 
-.rate-area>label:active {
+.rate-area > label:active {
   position: relative;
 }
 
@@ -193,17 +196,16 @@
   line-height: 20px;
   letter-spacing: 0.05em;
   color: #e1e1e1;
-}**/
+}**/**
 
 .select__style {
   width: 70px;
   height: 32px;
   background: #111a28;
-  opacity: 0.25;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   font-size: 14px;
   padding-left: 6px;
-  color: #E1E1E1;
+  color: #e1e1e1;
   outline: none;
   cursor: pointer;
 }
@@ -212,12 +214,9 @@ option {
   font-family: "Mukta", sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0.05em;
-  color: #e1e1e1;
+  letter-spacing: 0.5em;
 }
-
 
 .form {
   padding-top: 20px;
@@ -227,17 +226,18 @@ option {
   font-family: "Mukta", sans-serif;
   font-style: normal;
   font-weight: 200;
-  background: #4c525a;
-  opacity: 0.25;
+  background: rgba(76, 82, 90, 0.25);
   font-size: 14px;
   letter-spacing: 0.05em;
-  background: #4c525a;
-  opacity: 0.25;
-  border: 1px solid #ffffff;
+  border: 1px solid  rgba(255, 255, 255, 0.25);
   padding: 12px 65px;
-  color: #e1e1e1;
+  color: #E1E1E1;;
   outline: none;
   cursor: pointer;
   white-space: nowrap;
   margin-top: 20px;
+}
+
+.btn:hover {
+  background: rgba(191, 208, 231, 0.25);
 }
