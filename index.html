@@ -19,17 +19,17 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="container">
+      <div class="container row-padding">
         <div class="container__item">
           <div class="row">
             <div class="col-md-6">
               <img class="logo" src="./svg/Rectangle 2 (3).svg" alt="" />
-              <img class="photo__shoes" src="./svg/Rectangle 3.svg" alt="" />
+              <img class="photo" src="./svg/Rectangle 3.svg" alt="" />
               <div class="circle">
-                <div class="icon__1 icon__size"></div>
-                <div class="icon__2 icon__size"></div>
-                <div class="icon__3 icon__size"></div>
-                <div class="icon__4 icon__size"></div>
+                <div class="circle__item__1 item__size"></div>
+                <div class="circle__item__2 item__size"></div>
+                <div class="circle__item__3 item__size"></div>
+                <div class="circle__item__4 item__size"></div>
                 <!--<i class="fas fa-circle icon__1 icon__size"></i>
                 <i class="fas fa-circle icon__2 icon__size"></i>
                 <i class="fas fa-circle icon__3 icon__size"></i>
@@ -42,43 +42,60 @@
                 <img class="circle__grey" src="./img/Rectangle 8.png" alt="" />
               </div>--> 
             </div>
-            <div class="col-md-6">
-              <div class="title">
-                <h2>
-                  Nike SB Stefan
-                  <br />
-                  Janoski Max
-                </h2>
-                <p class="text__size">
-                  Unisex Skateboarding Shoe<br />
-                  (Men's Sizing)
-                </p>
-              </div>
-              <div class="rating ">
-                <span class="left"><i class="fas fa-star"></i></span><span class="left"><i class="fas fa-star"></i></span><span class="left"><i class="fas fa-star"></i></span><span class="left"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span>
+            <div class="col-md-5 offset-md-1 ">
+              <div class="container__items">
+                <div class="title">
+                  <h2>
+                    Nike SB Stefan
+                    <br />
+                    Janoski Max
+                  </h2>
+                  <p class="text">
+                    Unisex Skateboarding Shoe<br />
+                    (Men's Sizing)
+                  </p>
                 </div>
-              <!--<div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div><div>-->
-              <div class="select__menu">
-                <select class="select__menu__style">
-                  <option>Size</option>
-                  <option value="Пункт 1">Пункт 1</option>
-                  <option value="Пункт 2">Пункт 2</option>
-                </select>
-                <select class="select__menu__style">
-                  <option>Qty</option>
-                  <option value="Пункт 1">Пункт 1</option>
-                  <option value="Пункт 2">Пункт 2</option>
-                </select>
+                <div class="rating">
+                  <input type="radio" id="star-5" name="rating" value="5">
+                  <label for="star-5" title="Оценка «5»"></label>
+                  <input type="radio" id="star-4" name="rating" value="4">
+                  <label for="star-4" title="Оценка «4»"></label>
+                  <input type="radio" id="star-3" name="rating" value="3">
+                  <label for="star-3" title="Оценка «3»"></label>
+                  <input type="radio" id="star-2" name="rating" value="2">
+                  <label for="star-2" title="Оценка «2»"></label>
+                  <input type="radio" id="star-1" name="rating" value="1">
+                  <label for="star-1" title="Оценка «1»"></label>
               </div>
-              <form class="btn__position" action="" method="GET">
-                <button class="btn" type="submit">Add to cart</button>
-              </form>
+                <!--<div class="rating ">
+                  <span class="left"><i class="fas fa-star"></i></span><span class="left"><i class="fas fa-star"></i></span><span class="left"><i class="fas fa-star"></i></span><span class="left"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span>
+                  </div>-->
+                <!--<div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div><div>-->
+               
+                <form class="form" action="" method="GET">
+                  <div class="select">
+                    <select class="select__style" name="size">
+                      <option>Size</option>
+                      <option value="37">37</option>
+                      <option value="41">41</option>
+                    </select>
+                    <select class="select__style" name="qty">
+                      <option>Qty</option>
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+
+                  <button class="btn" type="submit">Add to cart</button>
+                </form>
+              </div>
+              
             </div>
           </div>
         </div>
